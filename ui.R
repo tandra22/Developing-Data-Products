@@ -5,7 +5,7 @@ library(shiny)
 shinyUI(fluidPage(
 
         # Application title
-        titlePanel("Prediction of child's height based on parents heigth"),
+        titlePanel("Prediction of child's height based on parents height"),
 
         sidebarPanel(
 
@@ -13,7 +13,7 @@ shinyUI(fluidPage(
 
                 h5("This application uses the datased included in", code('UsingR'), " library,",
                          code('galton'), ", a tabulated data set collected and used by Sir Francis Galton
-                         in 1885 to study the relationship between a parent's height and their childrens."),
+                         in 1885 to study the relationship between a parent's height and their children's."),
 
                 h4("Methods"),
 
