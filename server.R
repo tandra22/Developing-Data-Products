@@ -26,7 +26,7 @@ shinyServer(
 
                 output$plot <- renderPlot(qplot(galton$parent,galton$child,
                                                 geom=c("point","smooth"),
-                                                method='lm')
+                                                method="lm")
                                           +xlab("Parents height")
                                           +ylab("Children's predicted height")
                                           +scale_x_continuous(breaks=62:75)
