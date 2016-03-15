@@ -25,9 +25,8 @@ shinyServer(
                 output$text3 <- renderPrint({pr2(input$slider)})
 
                 output$plot <- renderPlot(qplot(galton$parent,galton$child,
-                                                geom=c("point","smooth"),
-                                                method="lm")
-                                          +xlab("Parents height")
+                                                geom=c("point","smooth"))
+                                          +xlab("Parent's height")
                                           +ylab("Children's predicted height")
                                           +scale_x_continuous(breaks=62:75)
                                           +scale_y_continuous(breaks=62:74)
